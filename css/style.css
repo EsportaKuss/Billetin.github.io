@@ -1,0 +1,411 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #CF0A0A;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #CF0A0A;
+  }
+  
+  /* Header styles */
+  header {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color: #ffffff;
+    color: #c92222;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    opacity: 0.95;
+    width: 100%;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Añadir esta línea para centrar horizontalmente */
+  }
+  
+  .logo-container h1{
+    font-size: 64px;
+  }
+  .logo-container img {
+    
+    width: 100px; /* ajusta el ancho aquí */
+    margin-right: 0.5em; /* agrega un margen derecho para separar la imagen del texto */
+  }
+  /* CSS para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  /* Agregar botón para mostrar/ocultar menú */
+  /* Ocultar navegación */
+  nav {
+    display: none;
+    width: 100%;
+  }
+  .logo-container h1{
+    padding-top: 20px; /* ajusta este valor según sea necesario */
+  }
+
+}
+
+/* CSS para dispositivos de escritorio */
+@media screen and (min-width: 768px) {
+  /* Ocultar el botón de menú en dispositivos de escritorio */
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Mostrar la navegación en dispositivos de escritorio */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+  }
+
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0 25px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  nav a {
+    font-size: 25px;
+    color:#CF0A0A;
+  }
+
+  /* Añadir estilo al enlace activo */
+  nav a.active {
+    border-bottom: 2px solid #009624;
+    padding-bottom: 4px;
+  }
+}
+
+  
+  /* Heroes section styles */
+
+  
+  /* CSS para dispositivos moviles */
+  @media screen and (max-width: 1000px) {
+    /* Agregar botón para mostrar/ocultar menú */
+
+    .hero-description h2 {
+      font-size: 36px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      color: #5FC298;
+      margin-bottom: 20px;
+    }
+    
+    .hero-description p {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333333;
+      line-height: 1.5;
+    }
+
+    #heroes .container {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .buttons-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .hero-image {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 100%;
+      order: 2; /* el elemento aparecerá primero en el orden */
+    }
+    #heroes {
+      flex-direction: column;
+      height: 100vh;
+      padding: 50px 0px 0px 0px;
+    }
+  
+    .hero-description {
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    .hero-image {
+      margin-top: 50px;
+    }
+    .buttons-container .btn {
+      font-size: 16px;
+      font-weight: bold;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      justify-content: center;
+      padding: 18px 20px;
+      margin-right: 10px;
+      height: 60px;
+      border: none;
+      border-radius: 5px;
+      color: #ffffff;
+      background-color: #5FC298;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+  }
+  /* CSS para dispositivos de escritorio */
+  @media screen and (min-width: 999px) {
+    /* Agregar botón para mostrar/ocultar menú */
+    
+    .hero-description h2 {
+      font-size: 48px;
+      font-weight: bold;
+      font-family: 'Montserrat', sans-serif;
+      color: #e8724b;
+      margin-bottom: 20px;
+    }
+    
+    .hero-description p {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      color: #212020;
+      line-height: 1.5;
+    }
+
+  #heroes .container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .hero-image {
+    flex: 1;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    order: 2; /* el elemento aparecerá primero en el orden */
+    
+  }
+  .buttons-container .btn {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+    padding: 16px 24px;
+    margin-right: 10px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #ed9a25;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  }
+
+
+  .hero-description {
+    flex: 1;
+    order: 1; /* el elemento aparecerá después en el orden */
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+  
+  .buttons-container .btn:hover {
+    background-color: #aa8623;
+  }
+  
+  .buttons-container a:last-child {
+    margin-right: 0;
+  }
+  
+  .buttons-container .social-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; /* Ancho del botón de Facebook */
+    width: 60px; /* Altura del botón de Facebook */
+    margin-left: 10px;
+    border-radius: 5px;
+    background-color: #ba9327;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .buttons-container .social-btn:hover {
+    background-color: #aa5e23;
+  }
+  
+  .buttons-container .social-btn img {
+    width: 50%;
+    height: auto;
+  }
+
+/*Contact styles*/
+
+#contacto {
+  background-color: #f2f2f2;
+  padding: 50px;
+  text-align: center;
+}
+
+#contacto h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#contacto p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+#form {
+  display: inline-block;
+  text-align: center;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.field input,
+.field textarea {
+  display: block;
+  width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#message {
+  height: 150px;
+  resize: none;
+
+}
+
+#form #button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#form #button[type="submit"]:hover {
+  background-color: #555;
+}
+
+
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  footer a {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  @media screen and (max-width: 767px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    header h1 {
+      margin-bottom: 20px;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+  
+    header nav ul li {
+      margin-left: 0;
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+  
+  
+
+  }
+  

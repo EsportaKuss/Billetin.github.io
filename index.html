@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corvus Films</title>
+    <link rel="shortcut icon" href="img/logo.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("GcYrn2aAIbJqeLjut");
+    </script>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img src="img/logo.jpeg" alt="logo" />
+        <h1>Corvus Films</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Nosotros</a></li>
+          <li><a href="">Contenido</a></li>
+          <li><a href="">Contactos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="heroes">
+      <div class="container">
+        <div class="hero-image">
+          <img src="img/fitness-men.png" alt="AI Exercise App" />
+        </div>
+        <div class="hero-description">
+          <h2>
+            Consigue un cuerpo saludable con nuestra app de fitness inteligente
+          </h2>
+          <p>
+            Alcanzar tus objetivos de fitness nunca ha sido tan fácil. Nuestra
+            aplicación ofrece planes de entrenamiento y dieta personalizados,
+            adaptados a tus necesidades y preferencias. Despídete de las
+            costosas cuotas de gimnasio y da la bienvenida a una vida más
+            saludable.
+          </p>
+          <br />
+          <p>
+            ¿Te interesa nuestra aplicación?<br />
+            Por favor, no dudes en anotarte para obtener novedades de nuestra
+            app.
+          </p>
+          <div class="buttons-container">
+            <a
+              href="https://forms.gle/AgoaHgWzna6rAvUk8"
+              class="btn"
+              target="_blank"
+              >¡Quiero anotarme!</a
+            >
+            <a
+              href="https://www.facebook.com/profile.php?id=100092522590830"
+              class="social-btn"
+              target="_blank"
+            >
+              <img src="img/facebook.png" alt="Facebook" />
+            </a>
+            <a
+              href="https://www.instagram.com/fitnessmind.ia/"
+              class="social-btn"
+              target="_blank"
+            >
+              <img src="img/instagram.png" alt="Instagram" />
+            </a>
+            <a
+              href="https://twitter.com/fitnessmind_ia"
+              class="social-btn"
+              target="_blank"
+            >
+              <img src="img/twitter.png" alt="Twitter" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+        <h2>¿Quieres conocer más sobre la app y sus posibilidades?</h2>
+        <p>Escríbenos para que podamos resolver todas tus dudas</p>
+        <form id="form">
+          <div class="field">
+            <label for="from_name">Correo electronico</label>
+            <input type="text" name="from_name" id="from_name">
+          </div>
+          <div class="field">
+            <label for="to_name">Nombre completo</label>
+            <input type="text" name="to_name" id="to_name">
+          </div>
+          <div class="field">
+            <label for="message">Mensaje</label>
+            <textarea name="message" id="message" rows="5" cols="50"></textarea>
+            
+          </div>
+        
+          <input type="submit" id="button" value="Enviar" >
+        </form>
+      </section>
+
+    <footer>
+      <p>&copy; 2023 FitnessMind. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/email.js"></script>
+  </body>
+</html>
