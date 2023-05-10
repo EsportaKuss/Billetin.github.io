@@ -131,6 +131,8 @@
   @media screen and (max-width: 1000px) {
     /* Agregar botón para mostrar/ocultar menú */
 
+   
+
     .home-demo h2 {
       color: #FFF;
       text-align: center;
@@ -154,6 +156,22 @@
       max-width: 100%;
     }
       
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+    }
+    
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
 
     .hero-description h2 {
       font-size: 36px;
@@ -215,6 +233,18 @@
   @media screen and (min-width: 999px) {
     /* Agregar botón para mostrar/ocultar menú */
 
+    #video-carrusel {
+      padding: 20px;
+      width: 100%;
+    }
+
+    #video-carrusel .home-demo .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+
+    }
   
 .home-demo h2 {
   color: #FFF;
