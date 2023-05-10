@@ -131,6 +131,30 @@
   @media screen and (max-width: 1000px) {
     /* Agregar botón para mostrar/ocultar menú */
 
+    .home-demo h2 {
+      color: #FFF;
+      text-align: center;
+      padding: 5rem 0;
+      margin: 0;
+      font-style: italic;
+      font-weight: 300;
+    }
+    
+    
+    .home-demo .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 200px;
+    }
+    
+    .home-demo .item img {
+      object-fit: contain;
+      max-height: 100%;
+      max-width: 100%;
+    }
+      
+
     .hero-description h2 {
       font-size: 36px;
       font-weight: bold;
@@ -158,14 +182,7 @@
       align-items: center;
       margin-top: 30px;
     }
-    .hero-image {
-      flex: 1;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-      height: 100%;
-      order: 2; /* el elemento aparecerá primero en el orden */
-    }
+
     #heroes {
       flex-direction: column;
       height: 100vh;
@@ -177,9 +194,6 @@
       text-align: center;
     }
   
-    .hero-image {
-      margin-top: 50px;
-    }
     .buttons-container .btn {
       font-size: 16px;
       font-weight: bold;
@@ -200,55 +214,31 @@
   /* CSS para dispositivos de escritorio */
   @media screen and (min-width: 999px) {
     /* Agregar botón para mostrar/ocultar menú */
-    
-    .heroes-carousel {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-      margin-top: 50px;
-    }
-    
-    .carousel-container {
-      display: flex;
-      flex-wrap: nowrap;
-      width: fit-content; /* Ajustar el ancho del contenedor al contenido */
-      margin: 0 auto;
-    }
-    
-    .carousel-slide {
-      display: flex;
-      flex-wrap: nowrap;
-      transition: transform 0.5s ease-in-out;
-    }
-    
-    .carousel-slide img {
-      width: 100%;
-      height: auto;
-    }
-    
-    .carousel-prev,
-    .carousel-next {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 30px;
-      font-weight: bold;
-      color: white;
-      cursor: pointer;
-      z-index: 1;
-    }
-    
-    .carousel-prev {
-      left: 0;
-    }
-    
-    .carousel-next {
-      right: 0;
-    }
-    
-    
+
+  
+.home-demo h2 {
+  color: #FFF;
+  text-align: center;
+  padding: 5rem 0;
+  margin: 0;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+.home-demo .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+.home-demo .item img {
+  object-fit: contain;
+  max-height: 100%;
+  max-width: 100%;
+}
+  
 
     .hero-description h2 {
       font-size: 48px;
