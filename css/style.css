@@ -11,7 +11,19 @@
     line-height: 1.5;
     color: #333;
     background-color: #fff;
+    background: url(/img/BG.jpg) no-repeat center center fixed;
+    background-size: cover;
+    
   }
+
+  .franja {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 200px;
+    background-color: rgb(255, 140, 140);
+  }
+  
   
   a {
     text-decoration: none;
@@ -132,6 +144,17 @@
     /* Agregar botón para mostrar/ocultar menú */
 
    
+    
+
+    .plus {
+      width: 300px; 
+      height: 200px; 
+      overflow: auto; 
+      float: left; 
+      box-sizing: border-box; 
+      padding: 10px; 
+      border: 1px solid black; 
+    }
 
     .home-demo h2 {
       color: #FFF;
@@ -147,7 +170,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 200px;
+      height: 100px;
     }
     
     .home-demo .item img {
@@ -233,6 +256,61 @@
   @media screen and (min-width: 999px) {
     /* Agregar botón para mostrar/ocultar menú */
 
+    .hero-description {
+      flex: 1;
+      order: 1; /* el elemento aparecerá después en el orden */
+    }
+    .buttons-container .btn:hover {
+      background-color: #aa8623;
+    }
+    
+    .buttons-container a:last-child {
+      margin-right: 0;
+    }
+    
+    .buttons-container .social-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px; /* Ancho del botón de Facebook */
+      width: 60px; /* Altura del botón de Facebook */
+      margin-left: 10px;
+      border-radius: 5px;
+      background-color: #ba9327;
+      transition: background-color 0.3s ease-in-out;
+    }
+    
+    .buttons-container .social-btn:hover {
+      background-color: #aa5e23;
+    }
+    
+    .buttons-container .social-btn img {
+      width: 50%;
+      height: auto;
+    }
+
+    .team-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .team-member {
+      margin: 0 20px;
+      text-align: center;
+    }
+    
+    .team-member img {
+      height: 200px;
+      width: 200px;
+      transition: transform 0.2s ease-in-out;
+    }
+    
+    .team-member img:hover {
+      transform: scale(1.1);
+    }
+    
     #video-carrusel {
       padding: 20px;
       width: 100%;
@@ -242,35 +320,36 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      height: 100vh;
+      height: 40vh;
 
     }
   
-.home-demo h2 {
-  color: #FFF;
-  text-align: center;
-  padding: 5rem 0;
-  margin: 0;
-  font-style: italic;
-  font-weight: 300;
-}
+    .home-demo h2 {
+      color: #FFF;
+      text-align: center;
+      padding: 5rem 0;
+      margin: 0;
+      font-style: italic;
+      font-weight: 300;
+    }
 
 
-.home-demo .item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 200px;
-}
+    .home-demo .item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+    }
 
-.home-demo .item img {
-  object-fit: contain;
-  max-height: 100%;
-  max-width: 100%;
+    .home-demo .item img {
+      object-fit: contain;
+      max-height: 40%;
+      max-width: 40%;
 }
   
 
     .hero-description h2 {
+      padding: 5vh;
       font-size: 48px;
       font-weight: bold;
       font-family: 'Montserrat', sans-serif;
@@ -279,6 +358,7 @@
     }
     
     .hero-description p {
+      padding: 5vh;
       font-family: Arial, sans-serif;
       font-size: 18px;
       color: #212020;
@@ -286,6 +366,7 @@
     }
 
   #heroes .container {
+    padding: 5vh;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -307,17 +388,18 @@
     padding: 16px 24px;
     margin-right: 10px;
     height: 60px;
-    border: none;
+    border: 200px;
     border-radius: 5px;
     color: #ffffff;
-    background-color: #ed9a25;
+    background-color: #b51f1f;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
   }
-  }
+  
 
 
   .hero-description {
+    padding: 5vh;
     flex: 1;
     order: 1; /* el elemento aparecerá después en el orden */
   }
@@ -457,4 +539,4 @@
   
 
   }
-  
+}
